@@ -10,6 +10,7 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import style from '../styles/Population_table.module.css'
 import Link from 'next/link';
+// import Image from 'next/image'
 
 const StyledTableCell = withStyles((theme) => ({
     head: {
@@ -88,8 +89,8 @@ const Population_table = ({ api_data }) => {
                             <Link href={`/country/${row.alpha3Code}`}>
 
                                 <StyledTableRow className={style.tables}>
-
-                                    <StyledTableCell component="th" scope="row">{row.name}</StyledTableCell>
+                                    
+                                    <StyledTableCell component="th" scope="row" >{row.name}</StyledTableCell>
                                     <StyledTableCell align="center">{row.population}</StyledTableCell>
 
                                 </StyledTableRow>
