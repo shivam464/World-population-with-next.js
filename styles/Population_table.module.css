@@ -1,0 +1,33 @@
+.table_div{
+    margin: 5rem auto;
+    width: 50%;
+    overflow: hidden;
+}
+.main_table{
+border: 0.1px solid rgba(192, 192, 192, 0.521);
+}
+.tables{
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.btn Button{
+    margin-left: 1rem;
+}
+.table_row{
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    background-color: rgb(19, 18, 18);
+    
+}
+.table_row th{
+    color: white;
+}
+
+.heading{
+    width: 100%;
+}

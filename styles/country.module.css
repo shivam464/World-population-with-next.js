@@ -1,0 +1,43 @@
+.main_container{
+    background-color: rgb(44, 43, 43);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+     max-width: 50%;
+     background-color: rgb(39, 37, 37);
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     margin: 0 auto;
+     box-shadow:  -21px 21px 19px #1d1d1d,
+             21px -21px 19px #212121;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.image_div{
+    max-width: 100%;
+
+}
+.image_div img{
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 1.5rem;
+}
+.details>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.details{
+    color: rgba(156, 155, 155, 0.726);
+    padding:  0.1rem 1rem 1rem 1rem;
+}
+.main_container>Button{
+background-color: rgba(139, 139, 139, 0.63) ;
+}
