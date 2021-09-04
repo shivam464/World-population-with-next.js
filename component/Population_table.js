@@ -32,21 +32,6 @@ const StyledTableRow = withStyles((theme) => ({
 
 
 
-const rows = [
-    {
-        name: "india",
-        population: "223232"
-    },
-    {
-        name: "china",
-        population: "44232"
-    },
-    {
-        name: "india",
-        population: "223232"
-    },
-
-];
 
 const useStyles = makeStyles({
     table: {
@@ -67,6 +52,7 @@ const sortpopulation = (api_data, direction) => {
 const Population_table = ({ api_data }) => {
     const [direction, setdirection] = React.useState("");
     const sorted_data = sortpopulation(api_data, direction);
+    // console.log(sorted_data);
 
     const classes = useStyles();
     return (
@@ -90,8 +76,8 @@ const Population_table = ({ api_data }) => {
 
                                 <StyledTableRow className={style.tables}>
                                     
-                                    <StyledTableCell component="th" scope="row" >{row.name}</StyledTableCell>
-                                    <StyledTableCell align="center">{row.population}</StyledTableCell>
+                                    <StyledTableCell component="th" scope="row" key={row.name}>{row.name}</StyledTableCell>
+                                    <StyledTableCell align="center" key={row.population}>{row.population}</StyledTableCell>
 
                                 </StyledTableRow>
                             </Link>
